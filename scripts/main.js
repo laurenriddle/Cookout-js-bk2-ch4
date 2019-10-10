@@ -30,9 +30,6 @@ const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 // An empty array that will store the objects after the `grill()` function cooks the food.
 const cookedFood = [];
 
-for (let i = 0; i < foods.length; i++) {
-    grill(foods[i])
-   } 
 
 function grill (currentObject) {
   
@@ -41,6 +38,10 @@ function grill (currentObject) {
        // // Put the cooked food into the appropriate array
        cookedFood.push(currentObject);
 };
+
+for (let i = 0; i < foods.length; i++) {
+    grill(foods[i])
+   } 
 
 console.log("Cooked Food", cookedFood)
 
